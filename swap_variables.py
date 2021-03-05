@@ -17,3 +17,7 @@ def swap(a, b):
 
 a, b = swap(a, b)
 print(f"A = {a} and B = {b}")
+
+# or by tuple
+a, b = b, a
+print(f"A = {a} and B = {b}")
