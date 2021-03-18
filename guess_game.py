@@ -1,6 +1,10 @@
+#!/usr/bin/env python3
+
+import random
+
 class GuessNumber:
-    def __init__(self, number, mn=0, mx=100):
-        self.number = number
+    def __init__(self, mn=0, mx=100):
+        self.number = random.randint(mn, mx)
         self.guesses = 0
         self.min = mn
         self.max = mx
@@ -36,5 +40,5 @@ class GuessNumber:
         print(f"You guessed the number in {self.guesses} guesses.")
 
 
-game = GuessNumber(56, 0, 100)
+game = GuessNumber()
 game.play()
