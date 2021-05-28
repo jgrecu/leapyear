@@ -15,4 +15,4 @@ def primes_lessthan(number):
             result.append(i)
     return result
 
-print(primes_lessthan(500))
+print(primes_lessthan(50))
